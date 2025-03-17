@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://portafolio-casarez.vercel.app
+
+# Sitemaps
+Sitemap: https://portafolio-casarez.vercel.app/sitemap.xml
