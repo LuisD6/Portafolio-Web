@@ -24,29 +24,25 @@ html {
   transform-origin: left;
 }
 
-/* globals.css */
-
-/* Estilos para modo claro */
+/* Modo claro */
 body {
-  @apply bg-white text-textLight font-Outfit; /* Fondo blanco, texto negro, fuente Outfit */
+  @apply bg-white text-textLight font-Outfit;
 }
 
-/* Estilos para modo oscuro */
+/* Modo oscuro */
 .dark body {
-  @apply bg-primary text-textDark font-Outfit; /* Fondo oscuro, texto blanco, fuente Outfit */
+  @apply bg-primary text-textDark font-Outfit;
 }
 
-/* Estilos generales para componentes */
+/* Componentes */
 .component {
   @apply p-6 rounded-lg transition-all duration-300;
 }
 
-/* Componentes en modo claro */
 .component-light {
   @apply bg-white bg-opacity-90 shadow-soft;
 }
 
-/* Componentes en modo oscuro */
 .component-dark {
   @apply bg-secondary bg-opacity-80 backdrop-blur-md shadow-neon;
 }

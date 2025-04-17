@@ -77,7 +77,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
     const handleScrollTop = () => {
       if (window.scrollY < 50 && activeSection !== 'top') {
-        console.log('Sección activa: top (forzada por scrollY)');
         setActiveSection('top');
       }
     };

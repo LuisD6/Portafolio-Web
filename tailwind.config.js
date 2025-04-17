@@ -1,23 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}", 
-    "./components/**/*.{js,ts,jsx,tsx,mdx}", 
-    "./app/**/*.{js,ts,jsx,tsx,mdx}", 
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        // Modo día
-        glassWhite: "rgba(255, 255, 255, 0.6)", // Para fondo tipo glass
-        lightBase: "#f9f9fb",                  // Base blanca elegante
-        lightSurface: "#ffffff",               // Superficie elevada
-        lightBorder: "#e0e0e0",                // Borde suave futurista
-        lightAccent: "#c2d1ff",                // Azul suave para acento
-        lightTextPrimary: "#111111",           // Texto elegante
-        lightTextSecondary: "#5f6368",         // Texto secundario
-
-        // Ya definidos previamente
+        glassWhite: "rgba(255, 255, 255, 0.6)",
+        lightBase: "#f9f9fb",
+        lightSurface: "#ffffff",
+        lightBorder: "#e0e0e0",
+        lightAccent: "#c2d1ff",
+        lightTextPrimary: "#111111",
+        lightTextSecondary: "#5f6368",
         lightHover: "#fcf4ff",
         darkHover: "#2a004a",
         primary: "#0D0B1E",
@@ -32,7 +29,6 @@ export default {
         textSecondaryDark: "#A084DC",
       },
       backgroundImage: {
-        // darkTheme: "linear-gradient(135deg, #0D0B1E, #1E1B36, #3A2A59, #613D77, #A084DC, #3A2A59)",
         glass: "linear-gradient(145deg, rgba(255,255,255,0.65), rgba(255,255,255,0.3))",
       },
       fontFamily: {
@@ -40,11 +36,8 @@ export default {
         Ovo: ["Ovo", "serif"],
       },
       boxShadow: {
-        // Estilo neumórfico / Apple-like
         neumorphic: "6px 6px 16px #d1d9e6, -6px -6px 16px #ffffff",
         glassLight: "0 8px 32px 0 rgba(31, 38, 135, 0.05)",
-
-        // Ya existentes
         black: "4px 4px 0 #000",
         white: "4px 4px 0 #fff",
         glow: "0 0 15px rgba(160, 132, 220, 0.6)",
