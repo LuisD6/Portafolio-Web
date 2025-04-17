@@ -12,7 +12,7 @@ export default {
         lightBase: "#f9f9fb",
         lightSurface: "#ffffff",
         lightBorder: "#e0e0e0",
-        lightAccent: "#c2d1ff",
+        lightAccent: "#ff4df8",
         lightTextPrimary: "#111111",
         lightTextSecondary: "#5f6368",
         lightHover: "#fcf4ff",

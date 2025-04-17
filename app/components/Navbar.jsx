@@ -144,7 +144,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         >
           {links.map(({ name, href }) => (
             <li key={href}>
-              <a href={href} className={`relative group text-lightTextPrimary dark:text-textDark hover:text-accent dark:hover:text-neonGreen transition-colors`}>
+              <a href={href} className={`relative group text-lightTextPrimary dark:text-textDark hover:text-lightAccent dark:hover:text-neonGreen transition-colors`}>
                 {name}
                 <span className={`block h-0.5 bg-lightAccent dark:bg-neonGreen transition-all duration-300
                   ${activeSection === href.slice(1) ? 'w-full' : 'w-0'} group-hover:w-full`}
