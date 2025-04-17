@@ -19,6 +19,7 @@ import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
 import profile_img_dark from './profile-img-dark.png';
 import download_icon from './download-icon.png';
+import download_icon_white from './download_icon-white.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
@@ -60,6 +61,7 @@ export const assets = {
     profile_img,
     profile_img_dark,
     download_icon,
+    download_icon_white,
     hand_icon,
     header_bg_color,
     moon_icon,
@@ -80,28 +82,43 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [
+  export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+      title: 'E-commerce Store',
+      description: 'Aplicación de tienda en línea con carrito de compras y pasarela de pago.',
+      bgImage: '/work-1.png',
+      demoLink: 'https://mi-ecommerce-demo.vercel.app',
+      repoLink: 'https://github.com/usuario/ecommerce-project',
+      technologies: ['React', 'JavaScript', 'Tailwind', 'PostgreSQL']
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+      title: 'Blog Personal',
+      description: 'Blog dinámico construido con Next.js, integración de CMS y comentarios.',
+      bgImage: '/work-2.png',
+      demoLink: 'https://mi-blog-demo.vercel.app',
+      repoLink: 'https://github.com/usuario/blog-project',
+      technologies: ['NextJS', 'TypeScript', 'Tailwind']
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+      title: 'Administrador de Tareas',
+      description: 'Aplicación CRUD para gestionar tareas con backend en Node y base de datos relacional.',
+      bgImage: '/work-3.png',
+      demoLink: 'https://mi-todo-demo.vercel.app',
+      repoLink: 'https://github.com/usuario/todo-app',
+      technologies: ['React', 'NodeJS', 'PostgreSQL']
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
+      title: 'UI/UX Designing',
+      description: 'Prototipos de interfaces para plataformas educativas.',
+      bgImage: '/work-4.png',
+      technologies: ['Figma', 'Adobe XD'],
+      demoLink: 'https://uiux-demo.vercel.app',
+      // repoLink no disponible
+      technologies: ['React', 'NodeJS', 'PostgreSQL']
+    }
+  ]
+  
+  
 
 // export const serviceData = [
 //     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
@@ -111,11 +128,22 @@ export const workData = [
 // ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
-];
-
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+  {
+    icon: assets.code_icon,
+    iconDark: assets.code_icon_dark,
+    title: 'Tecnologías',
+    description: 'HTML, CSS, JavaScript, React.js, Next.js, Node.js'
+  },
+  {
+    icon: assets.edu_icon,
+    iconDark: assets.edu_icon_dark,
+    title: 'Educación',
+    description: 'Ingeniero en Sistemas Computacionales. Especialidad: Ingeniería de Software'
+  },
+  {
+    icon: assets.project_icon,
+    iconDark: assets.project_icon_dark,
+    title: 'Proyectos',
+    description: 'He desarrollado más de 2 proyectos Full Stack'
+  }
 ];
