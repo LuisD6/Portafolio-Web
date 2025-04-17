@@ -58,7 +58,7 @@ const Work = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
-                className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Outfit text-[10px] sm:text-xs md:text-sm lg:text-base text-lightTextPrimary dark:text-textSecondaryDark"
+                className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Outfit text-[15px] sm:text-xs md:text-sm lg:text-base text-lightTextPrimary dark:text-textSecondaryDark"
             >
                 ¡Bienvenido a mi portafolio de desarrollo web! Explora una colección de proyectos que muestran mi experiencia en el desarrollo frontend con backend.
             </motion.p>
