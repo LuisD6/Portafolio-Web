@@ -84,13 +84,14 @@ export const assets = {
 
   export const workData = [
     {
-      title: 'E-commerce Store',
-      description: 'Aplicación de tienda en línea con carrito de compras y pasarela de pago.',
+      title: 'JournalApp',
+      description: 'Gestiona tus notas fácilmente. Crea, edita, elimina y guarda notas con imágenes en Cloudinary, y tus datos en Firebase. Regístrate con Google o crea una cuenta en segundos.',
       bgImage: '/work-1.png',
-      demoLink: 'https://mi-ecommerce-demo.vercel.app',
-      repoLink: 'https://github.com/usuario/ecommerce-project',
-      technologies: ['React', 'JavaScript', 'Tailwind', 'PostgreSQL']
+      demoLink: 'https://journal-app-luisd6b2s-projects.vercel.app/#/auth/login',
+      repoLink: 'https://github.com/LuisD6/Journal-App',
+      technologies: ['React', 'Redux', 'Firebase', 'Vite', 'MaterialUI', 'Cloudinary']
     },
+    
     {
       title: 'Blog Personal',
       description: 'Blog dinámico construido con Next.js, integración de CMS y comentarios.',
