@@ -87,23 +87,23 @@ const Work = ({ isDarkMode }) => {
                         whileHover={{ scale: 1.05 }}
                         className="relative cursor-pointer group overflow-hidden shadow-soft dark:shadow-neon rounded-lg"
                     >
-                        <div className="w-full aspect-[16/9] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${proyect.bgImage})` }}></div>
+                        <div className="w-full aspect-[4/3] sm:aspect-[16/9] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${proyect.bgImage})` }}></div>
 
-                        <div className="absolute inset-0 overflow-hidden">
-                            <div className="h-full w-full backdrop-blur-sm bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 rounded-lg opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <h2 className="font-Outfit font-bold mb-2 text-[12px] sm:text-sm md:text-base lg:text-lg xl:text-sm">
+                        <div className="absolute inset-0 overflow-hidden rounded-lg">
+                            <div className="h-full w-full overflow-y-auto no-scrollbar backdrop-blur-sm bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-3 sm:p-4 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <h2 className="font-Outfit font-bold mb-1 sm:mb-2 text-sm sm:text-base md:text-lg">
                                     {proyect.title}
                                 </h2>
-                                <p className="mb-3 font-Outfit text-[10px] text-sm sm:text-xs md:text-sm lg:text-sm xl:text-[15px] text-center"> 
+                                <p className="mb-2 sm:mb-3 font-Outfit text-xs sm:text-sm md:text-base text-center"> 
                                 {proyect.description}
                                 </p>
-                                <div className="flex flex-wrap gap-2 mb-3 justify-center">
+                                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-2 sm:mb-3 justify-center">
                                 {proyect.technologies?.map((tech, i) => (
                                     <span
                                     key={i}
-                                    className="flex items-center gap-1 px-2 py-1 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-black dark:bg-transparent dark:border dark:border-neonGreen dark:text-textDark dark:hover:bg-neonGreen dark:hover:text-black transition duration-300 text-[10px] sm:text-[11px] md:text-xs lg:text-xs xl:text-[10px]"
+                                    className="flex items-center gap-1 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-black dark:bg-transparent dark:border dark:border-neonGreen dark:text-textDark dark:hover:bg-neonGreen dark:hover:text-black transition duration-300 text-[10px] sm:text-[11px] md:text-xs"
                                     >
-                                    <span className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 lg:w-4 lg:h-4">
+                                    <span className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4">
                                         {React.cloneElement(techIcons[tech] || <></>)}
                                     </span>
                                     {tech}
@@ -112,15 +112,15 @@ const Work = ({ isDarkMode }) => {
                                 ))}
                                 </div>
 
-                                <div className="flex gap-4">
+                                <div className="flex gap-2 sm:gap-4">
                                     {proyect.demoLink && (
                                         <a
                                         href={proyect.demoLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 font-Outfit text-[10px] sm:text-[11px] md:text-xs lg:text-xs xl:text-[10px] px-4 py-2 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-black dark:bg-transparent dark:border dark:border-neonGreen dark:text-textDark dark:hover:bg-neonGreen dark:hover:text-black transition duration-300"
+                                        className="flex items-center gap-1.5 sm:gap-2 font-Outfit text-[10px] sm:text-[11px] md:text-xs px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-black dark:bg-transparent dark:border dark:border-neonGreen dark:text-textDark dark:hover:bg-neonGreen dark:hover:text-black transition duration-300"
                                         >
-                                        <FiExternalLink className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 xl:w-4 xl:h-4" />
+                                        <FiExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                                         Demo
                                         </a>
 
@@ -130,9 +130,9 @@ const Work = ({ isDarkMode }) => {
                                         href={proyect.repoLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 font-Outfit text-[10px] sm:text-[11px] md:text-xs lg:text-xs xl:text-[10px] px-4 py-2 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-black dark:bg-transparent dark:border dark:border-neonMagenta dark:text-textDark dark:hover:bg-neonMagenta dark:hover:text-black transition duration-300"
+                                        className="flex items-center gap-1.5 sm:gap-2 font-Outfit text-[10px] sm:text-[11px] md:text-xs px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-transparent border border-white text-white hover:bg-white hover:text-black dark:bg-transparent dark:border dark:border-neonMagenta dark:text-textDark dark:hover:bg-neonMagenta dark:hover:text-black transition duration-300"
                                         >
-                                        <FiGithub className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 xl:w-4 xl:h-4" />
+                                        <FiGithub className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                                         Repo
                                         </a>
 

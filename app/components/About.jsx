@@ -61,18 +61,19 @@ const About = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col lg:flex-row items-center gap-10 my-20"
+        className="flex flex-col lg:flex-row items-center gap-12 my-12 sm:my-20"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="w-64 sm:w-80 rounded-3xl max-w-none shadow-soft dark:shadow-neon dark:border dark:border-neonGreen border border-lightBorder bg-glassWhite backdrop-blur-xs"
+          className="relative w-64 sm:w-80 rounded-3xl max-w-none shadow-2xl dark:shadow-neonGreen/20 dark:border dark:border-neonGreen/50 border border-lightBorder bg-glassWhite backdrop-blur-xs group"
         >
+          <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 dark:from-neonGreen/10 dark:to-neonMagenta/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
           <Image
             src={isDarkMode ? assets.user_image_dark : assets.user_image}
             alt="Imagen de usuario"
-            className="w-full rounded-3xl"
+            className="w-full rounded-3xl object-cover"
           />
         </motion.div>
         <motion.div
@@ -81,8 +82,10 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl font-Outfit text-lightTextSecondary dark:text-textSecondaryDark">
-            Soy un desarrollador Full Stack con más de 2 años de experiencia trabajando en proyectos de comercio electrónico, crud, páginas web personalizadas y desarrollo frontend, utilizando tecnologías como React, Next.js, Tailwind, JavaScript, PostgreSQL y Docker. He colaborado en equipo usando GitHub como repositorio, destacándome por mi capacidad de organización, liderazgo y enfoque en la priorización de tareas.
+          <p className="mb-10 max-w-2xl font-Outfit text-lightTextSecondary dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+            Soy estudiante de 8vo semestre en la carrera de <strong className="text-black dark:text-white">Ingeniería en Sistemas Computacionales</strong>, con especialidad en Ingeniería de Software. 
+            Me dedico constantemente a mejorar mis habilidades a través de cursos especializados, como la formación completa en React, Next.js, Node.js y JavaScript moderno. 
+            Disfruto construyendo aplicaciones web completas (Full Stack) utilizando bases de datos, APIs REST y construyendo interfaces modernas con Tailwind CSS.
           </p>
 
           {/* Tarjetas de información */}
@@ -102,7 +105,7 @@ const About = ({ isDarkMode }) => {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 1.3, duration: 0.5 }}
-            className="my-6 font-Outfit text-lightTextSecondary dark:text-textSecondaryDark"
+            className="my-6 font-Outfit text-lightTextSecondary dark:text-textSecondaryDark font-medium tracking-wide"
           >
             Herramientas que uso
           </motion.h4>
@@ -110,18 +113,13 @@ const About = ({ isDarkMode }) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 0.6 }}
-            className="flex items-center gap-3 sm:gap-5"
+            className="flex items-center gap-3 sm:gap-5 flex-wrap"
           >
-<TechItem><BiLogoVisualStudio className="w-6 h-6 text-[#007acc] dark:text-[#007acc]" /></TechItem> {/* Visual Studio, color azul */}
-<TechItem><SiFirebase className="w-6 h-6 text-[#FFCB2B] dark:text-[#FFCB2B]" /></TechItem> {/* Firebase, color amarillo */}
-<TechItem><SiMongodb className="w-6 h-6 text-[#47A248] dark:text-[#47A248]" /></TechItem> {/* MongoDB, color verde */}
-<TechItem><SiGit className="w-6 h-6 text-[#F14E32] dark:text-[#F14E32]" /></TechItem> {/* Git, color rojo */}
-<TechItem><SiGithub className="w-6 h-6 text-[#333] dark:text-[#FFFFFF]" /></TechItem> {/* GitHub, gris oscuro (modo oscuro es blanco) */}
-<TechItem><SiPostman className="w-6 h-6 text-[#FF6A00] dark:text-[#FF6A00]" /></TechItem> {/* Postman, color naranja */}
-<TechItem><SiWarp className="w-6 h-6 text-[#5F4B8B] dark:text-[#5F4B8B]" /></TechItem> {/* Warp, color morado */}
-
-
-
+<TechItem><BiLogoVisualStudio className="w-6 h-6 text-[#007acc]" /></TechItem>
+<TechItem><SiFirebase className="w-6 h-6 text-[#FFCB2B]" /></TechItem>
+<TechItem><SiGit className="w-6 h-6 text-[#F14E32]" /></TechItem>
+<TechItem><SiGithub className="w-6 h-6 text-[#333] dark:text-[#FFFFFF]" /></TechItem>
+<TechItem><SiPostman className="w-6 h-6 text-[#FF6A00]" /></TechItem>
           </motion.ul>
 
           {/* Tecnologías */}
@@ -129,7 +127,7 @@ const About = ({ isDarkMode }) => {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 1.5, duration: 0.5 }}
-            className="my-6 font-Outfit text-lightTextSecondary dark:text-textSecondaryDark"
+            className="my-6 font-Outfit text-lightTextSecondary dark:text-textSecondaryDark font-medium tracking-wide"
           >
             Tecnologías que manejo
           </motion.h4>
@@ -139,17 +137,16 @@ const About = ({ isDarkMode }) => {
             transition={{ delay: 1.6, duration: 0.6 }}
             className="flex flex-wrap items-center gap-3 sm:gap-5"
           >
-<TechItem><FaReact className="w-6 h-6 text-blue-500 dark:text-[#61DAFB]" /></TechItem> {/* React, azul (modo claro), azul claro (modo oscuro) */}
-<TechItem><SiNextdotjs className="w-6 h-6 text-black dark:text-neonGreen" /></TechItem> {/* Next.js, negro (modo claro), verde neon (modo oscuro) */}
-<TechItem><FaJsSquare className="w-6 h-6 text-yellow-500 dark:text-[#F7DF1E]" /></TechItem> {/* JavaScript, amarillo (modo claro), amarillo (modo oscuro) */}
-<TechItem><SiPostgresql className="w-6 h-6 text-blue-700 dark:text-[#ffffff]" /></TechItem> {/* PostgreSQL, azul oscuro (modo claro), azul oscuro (modo oscuro) */}
-<TechItem><SiMongodb className="w-6 h-6 text-green-500 dark:text-[#47A248]" /></TechItem> {/* MongoDB, verde (modo claro), verde (modo oscuro) */}
-<TechItem><SiTailwindcss className="w-6 h-6 text-sky-400 dark:text-[#38BDF8]" /></TechItem> {/* Tailwind CSS, azul claro (modo claro), azul claro (modo oscuro) */}
-<TechItem><FaCss3Alt className="w-6 h-6 text-blue-600 dark:text-[#1572B6]" /></TechItem> {/* CSS3, azul (modo claro), azul (modo oscuro) */}
-<TechItem><FaHtml5 className="w-6 h-6 text-orange-500 dark:text-[#E44D26]" /></TechItem> {/* HTML5, naranja (modo claro), naranja (modo oscuro) */}
-<TechItem><SiNodedotjs className="w-6 h-6 text-green-600 dark:text-[#68A063]" /></TechItem> {/* Node.js, verde (modo claro), verde (modo oscuro) */}
-<TechItem><SiPython className="w-6 h-6 text-blue-400 dark:text-[#3776AB]" /></TechItem> {/* Python, azul (modo claro), azul (modo oscuro) */}
-<TechItem><SiMysql className="w-6 h-6 text-blue-600 dark:text-[#ffffff]" /></TechItem> {/* MySQL, azul (modo claro), azul (modo oscuro) */}
+<TechItem><FaReact className="w-6 h-6 text-blue-500 dark:text-[#61DAFB]" /></TechItem>
+<TechItem><SiNextdotjs className="w-6 h-6 text-black dark:text-white" /></TechItem>
+<TechItem><FaJsSquare className="w-6 h-6 text-yellow-500 dark:text-[#F7DF1E]" /></TechItem>
+<TechItem><SiNodedotjs className="w-6 h-6 text-green-600 dark:text-[#68A063]" /></TechItem>
+<TechItem><SiPostgresql className="w-6 h-6 text-blue-700 dark:text-[#336791]" /></TechItem>
+<TechItem><SiMongodb className="w-6 h-6 text-green-500 dark:text-[#47A248]" /></TechItem>
+<TechItem><SiTailwindcss className="w-6 h-6 text-sky-400 dark:text-[#38BDF8]" /></TechItem>
+<TechItem><FaCss3Alt className="w-6 h-6 text-blue-600 dark:text-[#1572B6]" /></TechItem>
+<TechItem><FaHtml5 className="w-6 h-6 text-orange-500 dark:text-[#E44D26]" /></TechItem>
+<TechItem><SiMysql className="w-6 h-6 text-blue-600 dark:text-[#4479A1]" /></TechItem>
 
           </motion.ul>
         </motion.div>

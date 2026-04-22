@@ -84,41 +84,38 @@ export const assets = {
 
   export const workData = [
     {
-      title: 'JournalApp',
-      description: 'Gestiona tus notas fácilmente. Crea, edita, elimina y guarda notas con imágenes en Cloudinary, y tus datos en Firebase. Regístrate con Google o crea una cuenta en segundos.',
-      bgImage: '/work-1.png',
-      demoLink: 'https://journal-app-luisd6b2s-projects.vercel.app/#/auth/login',
-      repoLink: 'https://github.com/LuisD6/Journal-App',
-      technologies: ['React', 'Redux', 'Firebase', 'Vite', 'MaterialUI', 'Cloudinary']
-    },
-    
-    {
-      title: 'Blog Personal',
-      description: 'Blog dinámico construido con Next.js, integración de CMS y comentarios.',
-      bgImage: '/work-2.png',
-      demoLink: 'https://mi-blog-demo.vercel.app',
-      repoLink: 'https://github.com/usuario/blog-project',
-      technologies: ['NextJS', 'TypeScript', 'Tailwind']
-    },
-    {
-      title: 'Administrador de Tareas',
-      description: 'Aplicación CRUD para gestionar tareas con backend en Node y base de datos relacional.',
+      title: 'Tienda Full Stack',
+      description: 'Plataforma e-commerce completa con frontend y backend. Integración de base de datos relacional y gestión de productos.',
       bgImage: '/work-3.png',
-      demoLink: 'https://mi-todo-demo.vercel.app',
-      repoLink: 'https://github.com/usuario/todo-app',
-      technologies: ['React', 'NodeJS', 'PostgreSQL']
+      demoLink: '',
+      repoLink: 'https://github.com/LuisD6/PROYECTO-TIENDA-FULL-STACK',
+      technologies: ['React', 'NodeJS', 'PostgreSQL', 'Tailwind']
     },
     {
-      title: 'UI/UX Designing',
-      description: 'Prototipos de interfaces para plataformas educativas.',
+      title: 'JournalApp',
+      description: 'Gestiona tus notas fácilmente. Crea, edita y guarda notas con imágenes en Cloudinary, y autenticación con Firebase.',
+      bgImage: '/work-1.png',
+      demoLink: 'https://journal-app-one-blond.vercel.app',
+      repoLink: 'https://github.com/LuisD6/Journal-App',
+      technologies: ['React', 'Redux', 'Firebase', 'Vite', 'MaterialUI']
+    },
+    {
+      title: 'React MERN Calendar Backend',
+      description: 'API REST robusta desarrollada con Node.js y MongoDB para gestionar eventos y autenticación de usuarios de un calendario.',
+      bgImage: '/work-2.png',
+      demoLink: '',
+      repoLink: 'https://github.com/LuisD6/React-MERN-backend',
+      technologies: ['NodeJS', 'React', 'MongoDB']
+    },
+    {
+      title: 'Heroes SPA',
+      description: 'Single Page Application para buscar y filtrar héroes de cómics, implementando React Router y hooks personalizados.',
       bgImage: '/work-4.png',
-      technologies: ['Figma', 'Adobe XD'],
-      demoLink: 'https://uiux-demo.vercel.app',
-      // repoLink no disponible
-      technologies: ['React', 'NodeJS', 'PostgreSQL']
+      demoLink: '',
+      repoLink: 'https://github.com/LuisD6/07-HEROES-SPA',
+      technologies: ['React', 'JavaScript', 'CSS']
     }
   ]
-  
   
 
 // export const serviceData = [
@@ -133,18 +130,18 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: 'Tecnologías',
-    description: 'HTML, CSS, JavaScript, React.js, Next.js, Node.js'
+    description: 'React, Next.js, Node.js, JavaScript, Tailwind, PostgreSQL'
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: 'Educación',
-    description: 'Ingeniero en Sistemas Computacionales. Especialidad: Ingeniería de Software'
+    description: 'Estudiante de 8vo semestre de Ing. en Sistemas Computacionales (Especialidad Software)'
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: 'Proyectos',
-    description: 'He desarrollado más de 2 proyectos Full Stack'
+    description: 'Desarrollo de aplicaciones SPA, APIs REST y E-commerce Full Stack'
   }
 ];

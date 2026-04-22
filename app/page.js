@@ -1,12 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import dynamic from 'next/dynamic';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Work from './components/Work';
+
+// Lazy loading para componentes debajo del pliegue (below the fold)
+const About = dynamic(() => import('./components/About'), { ssr: true });
+const Work = dynamic(() => import('./components/Work'), { ssr: true });
+const Contact = dynamic(() => import('./components/Contact'), { ssr: true });
+const Footer = dynamic(() => import('./components/Footer'), { ssr: true });
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);

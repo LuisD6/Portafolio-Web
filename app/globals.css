@@ -46,3 +46,13 @@ body {
 .component-dark {
   @apply bg-secondary bg-opacity-80 backdrop-blur-md shadow-neon;
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
